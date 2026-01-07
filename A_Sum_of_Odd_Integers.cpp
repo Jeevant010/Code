@@ -26,23 +26,10 @@ ll og2(ll x){
 void solve() {
     ll n, k;
     cin>>n>>k;
-    if(n%2 == 0){
-        if(k % 2 ==0) {
-            cout<<"YES";
-        }
-        else {
-            cout<<"NO";
-        }
-    }
-    else {
-        if(k % 2 ==0) {
-            cout<<"NO";
-        }
-        else {
-            cout<<"YES";
-        }
-    }
-    cout<<"\n";
+    if (n >= k * k && (n % 2 == k % 2))
+        cout << "YES\n";
+    else
+        cout << "NO\n";
 }
 
 int main() {
